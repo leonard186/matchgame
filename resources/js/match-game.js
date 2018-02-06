@@ -1,17 +1,14 @@
 var MatchGame = {};
 
+/*
+Sets up a new game after HTML document has loaded.
+Renders a 4x4 board of cards.
+*/
 $(document).ready(function() {
   var $game = $("#game");
   var value = MatchGame.generateCardValues();
   MatchGame.renderCards(value, $game);
 });
-
-
-/*
-Sets up a new game after HTML document has loaded.
-Renders a 4x4 board of cards.
-*/
-
 /*
 Generates and returns an array of matching card values.
 */
@@ -93,7 +90,7 @@ MatchGame.flipCard = function($card, $game) {
         flippedCards[0].css('background-color', 'rgb(32, 64, 86)').text('').data('flipped', false);
         flippedCards[1].css('background-color', 'rgb(32, 64, 86)').text('').data('flipped', false);
       }, 400);
-      $game.data('flippedCards', []);
     }
+      $game.data('flippedCards', []);
   }
 };
