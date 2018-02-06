@@ -10,7 +10,18 @@ var MatchGame = {};
  */
 
 MatchGame.generateCardValues = function () {
-
+  var orderedCardValues = [];
+  for(var i = 1; i <= 8; i++) {
+    orderedCardValues.push(i);
+    orderedCardValues.push(i);
+  }
+  var randomCardValues = [];
+  while(orderedCardValues.length > 0) {
+    var randomI = Math.floor(Math.random() * orderedCardValues.length);
+    var randomV = orderedCardValues.splice(randomI, 1)[0];
+    randomCardValues.push(randomV);
+  }
+  return randomCardValues;
 };
 
 /*
@@ -19,7 +30,7 @@ MatchGame.generateCardValues = function () {
 */
 
 MatchGame.renderCards = function(cardValues, $game) {
-
+  
 };
 
 /*
