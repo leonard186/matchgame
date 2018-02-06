@@ -1,0 +1,31 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+/* Universal style */
+
+html {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  background-color: rgb(255, 242, 242);
+}
+
+.container {
+  margin-top: 5.25rem;
+}
+/* Game instruction section */
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: rgb(32, 64, 86);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  color: rgb(74, 74, 74);
+}
